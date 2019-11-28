@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.title{
+    grid-area: title;
+}
+.header{
+    grid-area: header;
+}
+.sidebar{
+    grid-area: sidebar;
+}
+.content{
+    grid-area: content;
+}
+.title{
+    grid-area: footer;
+}
+.grid div:nth-child(even){
+    background: red;
+}
+
+.grid div:nth-child(odd){
+    background: green;
+}
